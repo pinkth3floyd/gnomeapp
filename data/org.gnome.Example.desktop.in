@@ -1,10 +1,10 @@
 [Desktop Entry]
-Name=test
+Name=Tic Tac Toe
 Exec=org.gnome.Example
 Icon=org.gnome.Example
 Terminal=false
 Type=Application
-Categories=Utility;
-Keywords=GTK;
+Categories=Game;
+Keywords=Tic Tac Toe;Game;GTK;
 StartupNotify=true
 DBusActivatable=true

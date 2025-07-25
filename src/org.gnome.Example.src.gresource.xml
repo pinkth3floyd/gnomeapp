@@ -3,5 +3,6 @@
   <gresource prefix="/org/gnome/Example/js">
     <file>main.js</file>
     <file>window.js</file>
+    <file>window.ui</file>
   </gresource>
 </gresources>

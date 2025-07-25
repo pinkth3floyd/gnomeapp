@@ -47,7 +47,7 @@ export const TestApplication = GObject.registerClass(
             const show_about_action = new Gio.SimpleAction({name: 'about'});
             show_about_action.connect('activate', action => {
                 const aboutParams = {
-                    application_name: 'test',
+                    application_name: 'Tic Tac Toe',
                     application_icon: 'org.gnome.Example',
                     developer_name: 'pj',
                     version: '0.1.0',
@@ -68,7 +68,7 @@ export const TestApplication = GObject.registerClass(
             let {active_window} = this;
 
             if (!active_window)
-                active_window = new TestWindow(this);
+                active_window = new TestWindow({ application: this });
 
             active_window.present();
         }
@@ -77,5 +77,5 @@ export const TestApplication = GObject.registerClass(
 
 export function main(argv) {
     const application = new TestApplication();
-    return application.runAsync(argv);
+    return application.run(argv);
 }
